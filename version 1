@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#artist" class="w3-button w3-bar-item">About Jaejin</a>
+  <a href="#tour" class="w3-button w3-bar-item">Upcoming Shows</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact Info</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="https://lacunamagazine.com/wp-content/uploads/2020/03/Jae-Jin.jpeg""
+  style="width:30%">
+  <img class="mySlides" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Flacunamagazine.com%2Freal-life-heros%2Fmusician-jae-jin%2F&psig=AOvVaw1aNI9sjAqNpcFUMb6qlPj-&ust=1609341631491000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLC0vva-8-0CFQAAAAAdAAAAABAE"
+  style="width:30%">
+  <img class="mySlides" src="https://i.shgcdn.com/5deb7199-ee65-4b93-a1ab-23fd4e9ee819/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+  style="width:30%">
+</section>
+
+<!-- Artist Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">JaeJin</h2>
+  <p class="w3-opacity"><i>Artist & Actor</i></p>
+  <p class="w3-justify">Jae Jin is an independent global recording artist, singer-songwriter, multi-instrumentalist and actor. He has self-released 3 albums: Kairos (2015), Baltimore Boulevard (EP, 2017), and his most recent album, an anthemic full-length titled 'Letters and Drinks</p>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-github"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
